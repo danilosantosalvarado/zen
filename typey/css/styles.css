@@ -1,0 +1,6 @@
+.form-item label.error {
+  font-size: 3.75rem;
+  line-height: 8.25rem;
+  font-family: "robotomedium", "Arial Narrow", Helvetica, sans-serif;
+  letter-spacing: 0.03125em;
+}

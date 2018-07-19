@@ -1,0 +1,92 @@
+// Font faces, stacks and sizes.
+//
+// Font styling and line heights are controlled by the several variables that
+// used by mixins like `type-layout()`, `margin-top()`, and `margin-bottom()`.
+// These variable and mixins are documented on the [Typey
+// homepage](https://github.com/jptaranto/typey).
+//
+// Style guide: sass.variables.typey
+
+// The font size set on the root html element.
+$base-font-size:    16px;
+
+// The base line height determines the basic unit of vertical rhythm.
+$base-line-height:  24px;
+
+// The font sizes in our type hierarchy as tee shirt sizes.
+$font-size: (
+  xxxl:                    60px,
+  xxl:                     46px,
+  xl:                      32px,
+  l:                       24px,
+  m:                       16px,
+  s:                       14px,
+  xs:                      12px
+) !default;
+ 
+// Typey allows you to alter font weights site-wide with this map.
+$font-weight: (
+  bold:             bold,
+  medium:           500,
+  normal:           normal,
+  light:            300,
+  lighter:          lighter,
+);
+
+// The following font family declarations use widely available fonts.
+// A user's web browser will look at the comma-separated list and will
+// attempt to use each font in turn until it finds one that is available
+// on the user's computer. The final "generic" font (sans-serif, serif or
+// monospace) hints at what type of font to use if the web browser doesn't
+// find any of the fonts in the list.
+
+// Serif font stacks.
+$times-new-roman: 'Times New Roman', Times, Georgia, 'DejaVu Serif', serif;
+$times:           Times, 'Times New Roman', Georgia, 'DejaVu Serif', serif;
+$georgia:         Georgia, 'Times New Roman', 'DejaVu Serif', serif;
+
+// Sans-serif font stacks.
+$verdana:         Verdana, Tahoma, 'DejaVu Sans', sans-serif;
+$tahoma:          Tahoma, Verdana, 'DejaVu Sans', sans-serif;
+$helvetica:       Helvetica, Arial, 'Nimbus Sans L', sans-serif;
+$arial:           Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+$impact:          Impact, 'Arial Narrow', Helvetica, sans-serif;
+
+$roboto-medium:  'robotomedium', 'Arial Narrow', Helvetica, sans-serif;
+$roboto-light:    'robotolight', 'Arial Narrow', Helvetica, sans-serif;
+$roboto-thin:     'robotothin', 'Arial Narrow', Helvetica, sans-serif;
+$roboto-bold:     'robotobold', 'Arial Narrow', Helvetica, sans-serif;
+
+// Monospace font stacks.
+// For an explanation of why "sans-serif" is at the end of this list, see
+// http://meyerweb.com/eric/thoughts/2010/02/12/fixed-monospace-sizing/
+$menlo:           Menlo, 'DejaVu Sans Mono', 'Ubuntu Mono', Courier, 'Courier New', monospace, sans-serif;
+
+// The font faces you specify in the $typefaces map can be used in the
+// typeface() mixin.
+
+$typefaces: (
+  sans-serif: (
+    font-family: $roboto-medium,
+    letter-spacing: .5px,
+  ),
+  monospace: (
+    font-family: $roboto-bold,
+    letter-spacing: .5px,
+    weight: bold,
+    style: normal,
+    case: uppercase,
+  )
+);
+
+// Output a horizontal grid to help with debugging typography.
+$typey-debug: false;
+
+// The length unit in which to output font size and margin values.
+// Supported values: px, em, rem.
+$base-unit:         'rem';
+
+// px fallbacks for rem units are needed for IE 8 and earlier.
+$rem-fallback:      false;
+
+

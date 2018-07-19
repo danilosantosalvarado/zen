@@ -1,0 +1,5 @@
+typey/node_modules
+typey/node_modules/*
+/typey/node_modules
+/typey/node_modules/*
+

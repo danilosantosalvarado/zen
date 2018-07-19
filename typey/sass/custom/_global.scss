@@ -1,0 +1,10 @@
+.form-item {
+  label {
+    &.error {
+      @include type-layout(xxxl, 5.5);
+      // @include font-size(l, 2);
+      // font-weight: weight('bold');
+      @include typeface(sans-serif);
+    }
+  }
+}
