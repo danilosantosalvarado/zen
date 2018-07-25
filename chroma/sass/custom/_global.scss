@@ -1,0 +1,7 @@
+.form-item {
+  label {
+    &.error {
+      color: color('green');
+    }
+  }
+}
