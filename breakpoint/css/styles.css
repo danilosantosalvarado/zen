@@ -1,0 +1,6 @@
+@media (min-width: 980px) {
+  .form-item label.error {
+    text-align: right;
+    display: block;
+  }
+}

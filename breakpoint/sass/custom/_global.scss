@@ -1,0 +1,11 @@
+.form-item {
+  label {
+    &.error {
+      @include respond-to(xl screen) {
+	      text-align: right;
+	      display: block;
+	    }
+    }
+
+  }
+}
