@@ -11,6 +11,10 @@
 //
 // Style guide: sass.colors
 
+
+// Suppor chroma in version gulp-sass 4
+// https://www.drupal.org/project/zen/issues/2967607
+
 // Define the default color scheme's color names.
 $chroma: define-default-color-scheme('branding', 'The site\'s main colors. Can be used to define colors in other color schemes.');
 
