@@ -21,7 +21,7 @@ $chroma: add-colors((
   'grey':                 #cbcbcb,
   grey-light:             #f0f0f0, // #ccc
   beige:                  #ece8e4,
-  grey-extra-light:       ('black' lighten 93.33%), // #eee
+  grey-extra-light:      #eee,
   white:                  #fff,
   red:                    #ed1c24,
   red-dark:               #93141a,
@@ -67,7 +67,7 @@ $chroma: add-colors('functional', (
 
   menu-active:            'text',
 
-  preview-bg:             ('yellow' lighten 43%),
+  // preview-bg:             ('yellow' lighten 43%),
 
   progress-bar:           'blue',
   progress-bar-bg:        'grey-light',
@@ -82,23 +82,23 @@ $chroma: add-colors('functional', (
   skip-link-bg:           'grey-dark',
 
   status:                 'blue',
-  status-bg:              (status lighten 62%),
+  // status-bg:              (status lighten 62%),
   status-highlight:       text,
   warning:                text,
-  warning-bg:             ('yellow' lighten 45%),
+  // warning-bg:             ('yellow' lighten 45%),
   warning-border:         'yellow',
   error:                  'red',
-  error-bg:               (error lighten 57%),
+  // error-bg:               (error lighten 57%),
 
   tabs-border:            'border',
   tabs-bg:                'text-bg',
   tab:                    'text',
   tab-text-shadow:        'white',
-  tab-bg:                 ('grey-light' lighten 6.66%),
+  // tab-bg:                 ('grey-light' lighten 6.66%),
   tab-secondary:          'grey-dark',
 
-  table-drag:             ('yellow' lighten 43%),
-  table-select:           ('yellow' lighten 47%),
+  // table-drag:             ('yellow' lighten 43%),
+  // table-select:           ('yellow' lighten 47%),
 
   watermark:              'grey-extra-light',
 ));

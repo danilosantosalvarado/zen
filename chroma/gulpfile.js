@@ -1,4 +1,4 @@
-var importOnce = require('node-sass-import-once'),path = require('path');  //importacion de paquetes node_modules 
+var importOnce = require('node-sass-import-once'),path = require('path');  //importacion de paquetes node_modules
 
 var options = {};
 var gulp      = require('gulp');
@@ -51,9 +51,9 @@ gulp.task('styles', function() {
     .pipe(gulp.dest(options.theme.css))
 });
 
-// gulp.task('watch' function () {
-//   gulp.watch('./sass/**/*.scss', ['styles']);
-// });
+gulp.task('watch:css', function () {
+  gulp.watch('./sass/**/*.scss', ['styles']);
+});
 
 gulp.task('default', ['styles']);
 
